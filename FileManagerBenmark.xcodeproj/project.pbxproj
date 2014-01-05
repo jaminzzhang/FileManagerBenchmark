@@ -19,6 +19,13 @@
 		ED156F0A18794F7E00029DAE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED156EF218794F7E00029DAE /* UIKit.framework */; };
 		ED156F1218794F7E00029DAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED156F1018794F7E00029DAE /* InfoPlist.strings */; };
 		ED156F2D18795D2700029DAE /* FileManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED156F2C18795D2700029DAE /* FileManagerTest.m */; };
+		ED156F2F18797E5200029DAE /* CreateFileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED156F2E18797E5200029DAE /* CreateFileTest.m */; };
+		ED156F3118798CAC00029DAE /* Test.data in Resources */ = {isa = PBXBuildFile; fileRef = ED156F3018798CAC00029DAE /* Test.data */; };
+		ED156F331879992600029DAE /* CheckFileExistTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED156F321879992600029DAE /* CheckFileExistTest.m */; };
+		ED156F3518799A1300029DAE /* CopyFileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED156F3418799A1300029DAE /* CopyFileTest.m */; };
+		ED156F3718799CA600029DAE /* FileManagerTestSUite.m in Sources */ = {isa = PBXBuildFile; fileRef = ED156F3618799CA600029DAE /* FileManagerTestSUite.m */; };
+		ED156F3918799DBE00029DAE /* MoveFileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED156F3818799DBE00029DAE /* MoveFileTest.m */; };
+		ED156F3B1879A0B800029DAE /* RemoveFileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED156F3A1879A0B800029DAE /* RemoveFileTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		ED156F1118794F7E00029DAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ED156F2B18795D2700029DAE /* FileManagerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManagerTest.h; sourceTree = "<group>"; };
 		ED156F2C18795D2700029DAE /* FileManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerTest.m; sourceTree = "<group>"; };
+		ED156F2E18797E5200029DAE /* CreateFileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateFileTest.m; sourceTree = "<group>"; };
+		ED156F3018798CAC00029DAE /* Test.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Test.data; path = FileManagerBenmarkTests/Test.data; sourceTree = SOURCE_ROOT; };
+		ED156F321879992600029DAE /* CheckFileExistTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckFileExistTest.m; sourceTree = "<group>"; };
+		ED156F3418799A1300029DAE /* CopyFileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyFileTest.m; sourceTree = "<group>"; };
+		ED156F3618799CA600029DAE /* FileManagerTestSUite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerTestSUite.m; sourceTree = "<group>"; };
+		ED156F3818799DBE00029DAE /* MoveFileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveFileTest.m; sourceTree = "<group>"; };
+		ED156F3A1879A0B800029DAE /* RemoveFileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoveFileTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +133,7 @@
 		ED156EF518794F7E00029DAE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED156F3018798CAC00029DAE /* Test.data */,
 				ED156EF618794F7E00029DAE /* FileManagerBenmark-Info.plist */,
 				ED156EF718794F7E00029DAE /* InfoPlist.strings */,
 				ED156EFA18794F7E00029DAE /* main.m */,
@@ -133,6 +148,12 @@
 				ED156F0E18794F7E00029DAE /* Supporting Files */,
 				ED156F2B18795D2700029DAE /* FileManagerTest.h */,
 				ED156F2C18795D2700029DAE /* FileManagerTest.m */,
+				ED156F2E18797E5200029DAE /* CreateFileTest.m */,
+				ED156F321879992600029DAE /* CheckFileExistTest.m */,
+				ED156F3418799A1300029DAE /* CopyFileTest.m */,
+				ED156F3618799CA600029DAE /* FileManagerTestSUite.m */,
+				ED156F3818799DBE00029DAE /* MoveFileTest.m */,
+				ED156F3A1879A0B800029DAE /* RemoveFileTest.m */,
 			);
 			path = FileManagerBenmarkTests;
 			sourceTree = "<group>";
@@ -221,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED156F3118798CAC00029DAE /* Test.data in Resources */,
 				ED156EF918794F7E00029DAE /* InfoPlist.strings in Resources */,
 				ED156F0118794F7E00029DAE /* Images.xcassets in Resources */,
 			);
@@ -250,7 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED156F3918799DBE00029DAE /* MoveFileTest.m in Sources */,
+				ED156F3518799A1300029DAE /* CopyFileTest.m in Sources */,
 				ED156F2D18795D2700029DAE /* FileManagerTest.m in Sources */,
+				ED156F3B1879A0B800029DAE /* RemoveFileTest.m in Sources */,
+				ED156F2F18797E5200029DAE /* CreateFileTest.m in Sources */,
+				ED156F3718799CA600029DAE /* FileManagerTestSUite.m in Sources */,
+				ED156F331879992600029DAE /* CheckFileExistTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

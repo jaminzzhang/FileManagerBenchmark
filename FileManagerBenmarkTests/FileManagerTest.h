@@ -11,6 +11,9 @@
 @interface FileManagerTest : XCTestCase
 
 @property (nonatomic) NSString * libPath;
+@property (nonatomic) NSString * testPath;
+@property (nonatomic) NSString * testTempPath;
+
 @property (nonatomic) NSFileManager * fileManager;
 
 
