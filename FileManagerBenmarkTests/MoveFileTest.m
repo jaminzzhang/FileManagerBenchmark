@@ -28,7 +28,6 @@
 }
 
 
-#define TEST_MOVE_FILE
 #ifdef TEST_MOVE_FILE
 - (void)testMoveFileTest
 {

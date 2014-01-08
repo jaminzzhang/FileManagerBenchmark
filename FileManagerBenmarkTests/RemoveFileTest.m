@@ -27,7 +27,6 @@
     [super tearDown];
 }
 
-#define TEST_REMOVE_FILE
 #ifdef TEST_REMOVE_FILE
 - (void)testRemoveFileTest
 {

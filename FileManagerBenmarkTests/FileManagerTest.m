@@ -22,16 +22,16 @@
     self.testPath = [self.libPath stringByAppendingPathComponent:@"Files"];
     self.testTempPath = [self.testPath stringByAppendingPathComponent:@"tmp"];
 
-//    if (![self.fileManager fileExistsAtPath:self.testTempPath]) {
-//        NSError * error = nil;
-//        [self.fileManager createDirectoryAtPath:self.testTempPath
-//                    withIntermediateDirectories:YES
-//                                     attributes:nil
-//                                          error:&error];
-//        if (nil != error) {
-//            NSLog(@"Create Directory erorr:%@", error);
-//        }
-//    }
+    if (![self.fileManager fileExistsAtPath:self.testTempPath]) {
+        NSError * error = nil;
+        [self.fileManager createDirectoryAtPath:self.testTempPath
+                    withIntermediateDirectories:YES
+                                     attributes:nil
+                                          error:&error];
+        if (nil != error) {
+            NSLog(@"Create Directory erorr:%@", error);
+        }
+    }
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 

@@ -8,6 +8,18 @@
 
 #import <XCTest/XCTest.h>
 
+
+
+//#define TEST_CREATE_FILE
+//#define TEST_CHECK_FILE_EXIST
+//#define TEST_COPY_FILE
+//#define TEST_MOVE_FILE
+//#define TEST_REMOVE_FILE
+//#define TEST_LINK_FILE
+//#define TEST_FILE_ATTRIBUTES
+#define TEST_FILE_ENUMERATION
+
+
 @interface FileManagerTest : XCTestCase
 
 @property (nonatomic) NSString * libPath;

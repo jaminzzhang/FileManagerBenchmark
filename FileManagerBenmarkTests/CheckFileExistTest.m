@@ -31,7 +31,6 @@
 #pragma mark - Check File Exist
 
 
-//#define TEST_CHECK_FILE_EXIST
 #ifdef TEST_CHECK_FILE_EXIST
 
 //- (void)testCheckFileExist
@@ -53,7 +52,7 @@
 
 - (void)testCheckFileExist
 {
-    NSString *path = [self.libPath stringByAppendingPathComponent:@"Files/1.png"];
+    NSString *path = [self.testPath stringByAppendingPathComponent:@"Test.data"];
     BOOL isExist = NO;
     for (NSInteger i = 0; i < 10000; i++) {
         isExist = [self.fileManager fileExistsAtPath:path];
@@ -65,7 +64,7 @@
 
 - (void)testCheckDirExist
 {
-    NSString *path = [self.libPath stringByAppendingPathComponent:@"Files/1.png"];
+    NSString *path = self.testPath;
     BOOL isExist = NO;
     for (NSInteger i = 0; i < 10000; i++) {
         BOOL isDir = NO;
@@ -77,7 +76,7 @@
 
 - (void)testCheckFileIsNotExist
 {
-    NSString *path = [self.libPath stringByAppendingPathComponent:@"Files/3.png"];
+    NSString *path = [self.testPath stringByAppendingPathComponent:@"3.png"];
     BOOL isExist = NO;
     for (NSInteger i = 0; i < 10000; i++) {
         isExist = [self.fileManager fileExistsAtPath:path];

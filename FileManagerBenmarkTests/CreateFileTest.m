@@ -35,9 +35,9 @@
 //        }
 //    }
 
-//    self.contentData = [NSData data];
-    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"Test" ofType:@"data"];
-    self.contentData = [NSData dataWithContentsOfFile:filePath];
+    self.contentData = [NSData data];
+//    NSString * filePath = [[NSBundle mainBundle] pathForResource:@"Test" ofType:@"data"];
+//    self.contentData = [NSData dataWithContentsOfFile:filePath];
     // Put setup code here; it will be run once, before the first test case.
 }
 
@@ -49,7 +49,6 @@
 
 #pragma mark - Create File
 
-//#define TEST_CREATE_FILE
 #ifdef TEST_CREATE_FILE
 
 //
@@ -74,9 +73,11 @@
 - (void)testCreatingFile
 {
     NSString *fatherPath = self.testTempPath;//[self.testPath stringByAppendingPathComponent:@"TestCreateFile"];
+//    NSString *fatherPath = [self.testTempPath stringByAppendingPathComponent:@"subtemp"];
+//    [self.fileManager createDirectoryAtPath:fatherPath withIntermediateDirectories:YES attributes:nil error:nil];
     NSString * path = nil;
     BOOL successfull = NO;
-    for (NSInteger i = 0; i < 1000; i++) {
+    for (NSInteger i = 0; i < 10000; i++) {
         path = [fatherPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%d.data", i]];
         successfull = [self.fileManager createFileAtPath:path contents:self.contentData attributes:nil];
     }

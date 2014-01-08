@@ -1,5 +1,5 @@
 //
-//  CopyFileTest.m
+//  LinkFileTest.m
 //  FileManagerBenmark
 //
 //  Created by Jamin on 1/5/14.
@@ -9,11 +9,11 @@
 #import <XCTest/XCTest.h>
 #import "FileManagerTest.h"
 
-@interface CopyFileTest : FileManagerTest
+@interface LinkFileTest : FileManagerTest
 
 @end
 
-@implementation CopyFileTest
+@implementation LinkFileTest
 
 - (void)setUp
 {
@@ -27,10 +27,8 @@
     [super tearDown];
 }
 
-
-
-#ifdef TEST_COPY_FILE
-- (void)testCopyFileTest
+#ifdef TEST_LINK_FILE
+- (void)testLinkFileTest
 {
     NSString *fatherPath = self.testTempPath;//[self.testPath stringByAppendingPathComponent:@"TestCreateFile"];
     NSString * fromPath = [[NSBundle mainBundle] pathForResource:@"Test" ofType:@"data"];
@@ -38,15 +36,15 @@
     BOOL successfull = NO;
     for (NSInteger i = 0; i < 1000; i++) {
         NSError * error = nil;
-        toPath = [fatherPath stringByAppendingPathComponent:[NSString stringWithFormat:@"cp%d.data", i]];
-        successfull = [self.fileManager copyItemAtPath:fromPath toPath:toPath error:&error];
+        toPath = [fatherPath stringByAppendingPathComponent:[NSString stringWithFormat:@"link%d.data", i]];
+        successfull = [self.fileManager linkItemAtPath:fromPath toPath:toPath error:&error];
 
-//        successfull = [self.fileManager copyItemAtURL:[NSURL fileURLWithPath:fromPath]
-//                                                toURL:[NSURL fileURLWithPath:toPath]
-//                                                error:&error];
+        //        successfull = [self.fileManager copyItemAtURL:[NSURL fileURLWithPath:fromPath]
+        //                                                toURL:[NSURL fileURLWithPath:toPath]
+        //                                                error:&error];
     }
 
-    XCTAssert(successfull, @"copy File %@ Failed.", fromPath);
+    XCTAssert(successfull, @"Link File %@ Failed.", fromPath);
 }
 
 
