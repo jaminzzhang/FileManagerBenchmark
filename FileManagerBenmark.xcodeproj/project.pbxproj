@@ -98,7 +98,7 @@
 		ED156EE218794F7E00029DAE = {
 			isa = PBXGroup;
 			children = (
-				ED156EF418794F7E00029DAE /* FileManagerBenmark */,
+				ED156EF418794F7E00029DAE /* FileManagerchBenmark */,
 				ED156F0D18794F7E00029DAE /* FileManagerBenmarkTests */,
 				ED156EED18794F7E00029DAE /* Frameworks */,
 				ED156EEC18794F7E00029DAE /* Products */,
@@ -125,7 +125,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ED156EF418794F7E00029DAE /* FileManagerBenmark */ = {
+		ED156EF418794F7E00029DAE /* FileManagerchBenmark */ = {
 			isa = PBXGroup;
 			children = (
 				ED156EFD18794F7E00029DAE /* AppDelegate.h */,
@@ -133,6 +133,7 @@
 				ED156F0018794F7E00029DAE /* Images.xcassets */,
 				ED156EF518794F7E00029DAE /* Supporting Files */,
 			);
+			name = FileManagerchBenmark;
 			path = FileManagerBenmark;
 			sourceTree = "<group>";
 		};
@@ -228,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED156EE618794F7E00029DAE /* Build configuration list for PBXProject "FileManagerBenmark" */;
+			buildConfigurationList = ED156EE618794F7E00029DAE /* Build configuration list for PBXProject "FileManagerBenchmark" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -467,7 +468,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED156EE618794F7E00029DAE /* Build configuration list for PBXProject "FileManagerBenmark" */ = {
+		ED156EE618794F7E00029DAE /* Build configuration list for PBXProject "FileManagerBenchmark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED156F1518794F7F00029DAE /* Debug */,

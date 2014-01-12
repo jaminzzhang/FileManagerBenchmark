@@ -28,24 +28,37 @@
 }
 
 #ifdef TEST_LINK_FILE
-- (void)testLinkFileTest
+- (void)testHardLinkFile
 {
     NSString *fatherPath = self.testTempPath;//[self.testPath stringByAppendingPathComponent:@"TestCreateFile"];
-    NSString * fromPath = [[NSBundle mainBundle] pathForResource:@"Test" ofType:@"data"];
+    NSString * fromPath = self.testTempPath;//[self.testPath stringByAppendingPathComponent:@"Test.data"];
     NSString * toPath = nil;
     BOOL successfull = NO;
     for (NSInteger i = 0; i < 1000; i++) {
         NSError * error = nil;
-        toPath = [fatherPath stringByAppendingPathComponent:[NSString stringWithFormat:@"link%d.data", i]];
+        toPath = [fatherPath stringByAppendingPathComponent:[NSString stringWithFormat:@"link%ld.data", (long)i]];
         successfull = [self.fileManager linkItemAtPath:fromPath toPath:toPath error:&error];
-
-        //        successfull = [self.fileManager copyItemAtURL:[NSURL fileURLWithPath:fromPath]
-        //                                                toURL:[NSURL fileURLWithPath:toPath]
-        //                                                error:&error];
     }
 
     XCTAssert(successfull, @"Link File %@ Failed.", fromPath);
 }
+
+
+- (void)testSymbolicLinkFile
+{
+    NSString *fatherPath = self.testTempPath;//[self.testPath stringByAppendingPathComponent:@"TestCreateFile"];
+    NSString * fromPath = [self.testPath stringByAppendingPathComponent:@"1.rmvb"];//self.testTempPath;//
+    NSString * toPath = nil;
+    BOOL successfull = NO;
+    for (NSInteger i = 0; i < 1000; i++) {
+        NSError * error = nil;
+        toPath = [fatherPath stringByAppendingPathComponent:[NSString stringWithFormat:@"symbolicLink%ld.data", (long)i]];
+        successfull = [self.fileManager createSymbolicLinkAtPath:toPath withDestinationPath:fromPath error:&error];
+    }
+
+    XCTAssert(successfull, @"Link File %@ Failed.", fromPath);
+}
+
 
 
 
