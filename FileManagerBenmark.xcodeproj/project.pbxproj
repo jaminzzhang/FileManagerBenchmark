@@ -29,6 +29,7 @@
 		ED156F3D1879B1A300029DAE /* LinkFileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED156F3C1879B1A300029DAE /* LinkFileTest.m */; };
 		ED2195EF187C410000181065 /* EnumerateFilesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED2195EE187C410000181065 /* EnumerateFilesTest.m */; };
 		ED3A6D50187AED8B00C5020D /* FileAttributesTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3A6D4F187AED8B00C5020D /* FileAttributesTest.m */; };
+		EDCE40FD1882A83200B3950A /* WriteFileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCE40FC1882A83200B3950A /* WriteFileTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		ED156F3C1879B1A300029DAE /* LinkFileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkFileTest.m; sourceTree = "<group>"; };
 		ED2195EE187C410000181065 /* EnumerateFilesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnumerateFilesTest.m; sourceTree = "<group>"; };
 		ED3A6D4F187AED8B00C5020D /* FileAttributesTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileAttributesTest.m; sourceTree = "<group>"; };
+		EDCE40FC1882A83200B3950A /* WriteFileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteFileTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,18 +154,19 @@
 		ED156F0D18794F7E00029DAE /* FileManagerBenmarkTests */ = {
 			isa = PBXGroup;
 			children = (
-				ED156F0E18794F7E00029DAE /* Supporting Files */,
-				ED156F2B18795D2700029DAE /* FileManagerTest.h */,
-				ED156F2C18795D2700029DAE /* FileManagerTest.m */,
-				ED156F2E18797E5200029DAE /* CreateFileTest.m */,
 				ED156F321879992600029DAE /* CheckFileExistTest.m */,
 				ED156F3418799A1300029DAE /* CopyFileTest.m */,
+				ED156F2E18797E5200029DAE /* CreateFileTest.m */,
+				ED2195EE187C410000181065 /* EnumerateFilesTest.m */,
+				ED3A6D4F187AED8B00C5020D /* FileAttributesTest.m */,
+				ED156F2B18795D2700029DAE /* FileManagerTest.h */,
+				ED156F2C18795D2700029DAE /* FileManagerTest.m */,
 				ED156F3618799CA600029DAE /* FileManagerTestSUite.m */,
+				ED156F3C1879B1A300029DAE /* LinkFileTest.m */,
 				ED156F3818799DBE00029DAE /* MoveFileTest.m */,
 				ED156F3A1879A0B800029DAE /* RemoveFileTest.m */,
-				ED156F3C1879B1A300029DAE /* LinkFileTest.m */,
-				ED3A6D4F187AED8B00C5020D /* FileAttributesTest.m */,
-				ED2195EE187C410000181065 /* EnumerateFilesTest.m */,
+				ED156F0E18794F7E00029DAE /* Supporting Files */,
+				EDCE40FC1882A83200B3950A /* WriteFileTest.m */,
 			);
 			path = FileManagerBenmarkTests;
 			sourceTree = "<group>";
@@ -229,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED156EE618794F7E00029DAE /* Build configuration list for PBXProject "FileManagerBenchmark" */;
+			buildConfigurationList = ED156EE618794F7E00029DAE /* Build configuration list for PBXProject "FileManagerBenmark" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -284,6 +287,7 @@
 			files = (
 				ED2195EF187C410000181065 /* EnumerateFilesTest.m in Sources */,
 				ED156F3918799DBE00029DAE /* MoveFileTest.m in Sources */,
+				EDCE40FD1882A83200B3950A /* WriteFileTest.m in Sources */,
 				ED156F3518799A1300029DAE /* CopyFileTest.m in Sources */,
 				ED156F2D18795D2700029DAE /* FileManagerTest.m in Sources */,
 				ED156F3B1879A0B800029DAE /* RemoveFileTest.m in Sources */,
@@ -426,7 +430,7 @@
 		ED156F1B18794F7F00029DAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FileManagerBenmark.app/FileManagerBenmark";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -449,7 +453,7 @@
 		ED156F1C18794F7F00029DAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FileManagerBenmark.app/FileManagerBenmark";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -468,7 +472,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED156EE618794F7E00029DAE /* Build configuration list for PBXProject "FileManagerBenchmark" */ = {
+		ED156EE618794F7E00029DAE /* Build configuration list for PBXProject "FileManagerBenmark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED156F1518794F7F00029DAE /* Debug */,

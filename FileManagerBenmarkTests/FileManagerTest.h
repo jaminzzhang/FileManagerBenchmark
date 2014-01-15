@@ -18,6 +18,7 @@
 #define TEST_LINK_FILE
 #define TEST_FILE_ATTRIBUTES
 #define TEST_FILE_ENUMERATION
+#define TEST_FILE_WRITING
 
 
 @interface FileManagerTest : XCTestCase
